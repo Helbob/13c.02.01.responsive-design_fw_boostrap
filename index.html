@@ -14,42 +14,58 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <div class="container-fluid">
         <!-- Menu component layout -->
         <a href="index.html" class="navbar-brand">Logo</a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a href="#advantages" class="nav-link">Advantages</a>
-          </li>
-          <li class="nav-item">
-            <a href="#product" class="nav-link">Product</a>
-          </li>
-          <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
-        </ul>
-        <button type="button" class="btn btn-outline-success">
-          Learn More &#x2794;
-        </button>
+        <div class="collapse navbar-collapse flex-row" id="navbarNavAltMarkup">
+          <div class="container">
+            <div class="navbar-nav justify-content-around">
+              <a href="#advantages" aria-current="page" class="nav-link active"
+                >Advantages</a
+              >
+              <a href="#product" class="nav-link">Product</a>
+              <a href="#team" class="nav-link">Team</a>
+            </div>
+          </div>
+          <div>
+            <button type="button" class="btn btn-warning btn-sm">
+              Learn More &#x2794;
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
-    <header class="jumbotron">
+    <header id="main-header" class="jumbotron jumbotron-fluid">
       <!-- Header section -->
       <!-- Add image-->
-      <div class="container">
+      <div class="d-flex flex-row justify-content-evenly mw-100">
         <div class="header_text">
-          <h1 class="display-4">Corrupti e lorem ut fecerunt contrarii.</h1>
-          <p class="lead">
-            Non utriuque solatium amet netus nobis cum metus securus fecerunt
-            oppressus eu oportunitatis error est quae interpretes corporis - v
-            tot ullo s Verius.
-          </p>
-          <button type="button" class="btn btn-primary btn-lg">
-            Request Demo &#x2794;
-          </button>
+          <div class="bk">
+            <div class="container">
+              <h1 class="display-4 text-light fw-bold">
+                Corrupti e lorem ut fecerunt contrarii.
+              </h1>
+              <p class="lead text-light">
+                Non utriuque solatium amet netus nobis cum metus securus
+                fecerunt oppressus eu oportunitatis error est quae interpretes
+                corporis - v tot ullo s Verius.
+              </p>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button type="button" class="btn btn-warning">
+                Request Demo &#x2794;
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <!-- Add image-->
@@ -57,16 +73,18 @@
     </header>
 
     <section id="advantages ">
-      <div class="container">
-        <h2>Advantages</h2>
+      <div class="advantages_cards container">
+        <h2 class="text-dark pt-5">Advantages</h2>
         <!-- Card layout -->
-        <div class="advantages_cards row row-cols-1 row-cols-md-2 g-4">
+        <div class="row align-items-startmw-150">
           <article
-            class="advantages_card col card text-white bg-dark mb-3"
+            class="advantages_card col-6 col-sm-4 bg-warning pt-5 pb-3"
             style="max-width: 18rem"
           >
             <!-- Add image-->
-            <div class="advantages_card_graphics"></div>
+            <div class="advantages_card_graphics">
+              <img src="image3.jpg" alt="" class="img-thumbnail" />
+            </div>
             <div class="advantages_card_text">
               <h3 class="card-title">Legere hendrerit vectigal poenam</h3>
               <p class="card-text">
@@ -76,11 +94,13 @@
             </div>
           </article>
           <article
-            class="advantages_card col card text-white bg-dark mb-3"
+            class="advantages_card col-6 col-sm-4 bg-warning pt-5 pb-3"
             style="max-width: 18rem"
           >
             <!-- Add image-->
-            <div class="advantages_card_graphics"></div>
+            <div class="advantages_card_graphics">
+              <img src="image3.jpg" alt="" class="img-thumbnail" />
+            </div>
             <div class="advantages_card_text">
               <h3 class="card-title">Tandem vivendi cum praecedentia</h3>
               <p class="card-text">
@@ -90,11 +110,13 @@
             </div>
           </article>
           <article
-            class="advantages_card col card text-white bg-dark mb-3"
+            class="advantages_card col-6 col-sm-4 bg-warning pt-5 pb-3"
             style="max-width: 18rem"
           >
             <!-- Add image-->
-            <div class="advantages_card_graphics"></div>
+            <div class="advantages_card_graphics">
+              <img src="image3.jpg" alt="" class="img-thumbnail" />
+            </div>
             <div class="advantages_card_text">
               <h3 class="card-title">Qui liberum augue eum nam arcui</h3>
               <p class="card-text">
@@ -104,11 +126,13 @@
             </div>
           </article>
           <article
-            class="advantages_card col card text-white bg-dark mb-3"
+            class="advantages_card col-6 col-sm-4 bg-warning pt-5 pb-3"
             style="max-width: 18rem"
           >
             <!-- Add image-->
-            <div class="advantages_card_graphics"></div>
+            <div class="advantages_card_graphics">
+              <img src="image3.jpg" alt="" class="img-thumbnail" />
+            </div>
             <div class="advantages_card_text">
               <h3 class="card-title">Harum quae odio minim</h3>
               <p class="card-text">
@@ -119,11 +143,13 @@
             </div>
           </article>
           <article
-            class="advantages_card col card text-white bg-dark mb-3"
+            class="advantages_card col-6 col-sm-4 bg-warning pt-5 pb-3"
             style="max-width: 18rem"
           >
             <!-- Add image-->
-            <div class="advantages_card_graphics"></div>
+            <div class="advantages_card_graphics">
+              <img src="image3.jpg" alt="" class="img-thumbnail" />
+            </div>
             <div class="advantages_card_text">
               <h3 class="card-title">Ab eius nobis at romanorum</h3>
               <p class="card-text">
@@ -135,98 +161,119 @@
         </div>
       </div>
     </section>
-    <section id="product">
-      <h2>Per te usus sint Quas</h2>
+    <section id="product" class="container">
+      <h2 class="m-2">Per te usus sint Quas</h2>
       <!-- Two columns: graphics to the left, text to the right -->
 
       <!-- Add image-->
-      <div class="product_graphics"></div>
-      <div class="product_text">
-        <article>
-          <h3>1. Nisi Unde fuga mus fuga</h3>
-          <p>
-            Risus ab ducimus quo v terrenos acerba si odit quam justo nunc ullo
-            Modo.
-          </p>
-        </article>
-        <article>
-          <h3>2. Clades mus orci</h3>
-          <p>
-            Diam esse eaque plebeiorum mus urna imbibere conubia cras victoris
-            iusto populo.
-          </p>
-        </article>
-        <article>
-          <h3>3. Terrenos mus eventum</h3>
-          <p>
-            Vero poenis sunt id proin dui hac purus ipsa id qui sed te octavas
-            regnante regnet nisi'e putatur qui eos.
-          </p>
-        </article>
-        <article>
-          <h3>4. Ridiculus nec proin</h3>
-          <p>
-            Nemo curiosus senatus ille decipitur est iure ipsa dis sed nam quod
-            segete eum eius usus dis donec amet.
-          </p>
-        </article>
+      <div class="container">
+        <div class="row">
+          <div class="product_graphics col-6">
+            <img src="image6.jpg" alt="" class="img" />
+          </div>
+          <div class="product_text col-6">
+            <article class="m-2 p-4 bg-warning">
+              <h3>1. Nisi Unde fuga mus fuga</h3>
+              <p>
+                Risus ab ducimus quo v terrenos acerba si odit quam justo nunc
+                ullo Modo.
+              </p>
+            </article>
+            <article class="m-2 p-4">
+              <h3>2. Clades mus orci</h3>
+              <p>
+                Diam esse eaque plebeiorum mus urna imbibere conubia cras
+                victoris iusto populo.
+              </p>
+            </article>
+            <article class="m-2 p-4 bg-warning">
+              <h3>3. Terrenos mus eventum</h3>
+              <p>
+                Vero poenis sunt id proin dui hac purus ipsa id qui sed te
+                octavas regnante regnet nisi'e putatur qui eos.
+              </p>
+            </article>
+            <article class="m-2 p-4">
+              <h3>4. Ridiculus nec proin</h3>
+              <p>
+                Nemo curiosus senatus ille decipitur est iure ipsa dis sed nam
+                quod segete eum eius usus dis donec amet.
+              </p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
     <section class="highlight">
       <!-- Big headline component -->
-      <h2>
-        Intentione fuga natus quasi et Modulumina Simulacrum memento usus
-        instrumenta apparet nam y figuraliler custodes in est malleum fuga.
-      </h2>
-      <!-- Two small cards -->
-      <div class="highlight_small_cards">
-        <div>
-          <h3>Landem Inncem</h3>
-          <p>46% scripta orci</p>
-        </div>
-        <div>
-          <h3>Zzril Magnis</h3>
-          <p>45% dextris iure</p>
+
+      <div class="container d-flex flex-column bg-light p-4">
+        <h2 class="display-6">
+          Intentione fuga natus quasi et Modulumina Simulacrum memento usus
+          instrumenta apparet nam y figuraliler custodes in est malleum fuga.
+        </h2>
+        <!-- Two small cards -->
+        <div class="highlight_small_cards container">
+          <div class="row justify-content-md-center">
+            <div class="col-4">
+              <h3>Landem Inncem</h3>
+              <p>46% scripta orci</p>
+            </div>
+            <div class="col-4">
+              <h3>Zzril Magnis</h3>
+              <p>45% dextris iure</p>
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-warning">
+              Request Demo &#x2794;
+            </button>
+          </div>
         </div>
       </div>
-      <button type="button">Request Demo &#x2794;</button>
     </section>
-    <section id="team">
+    <section id="team" class="container">
       <h2>Meet the Team</h2>
       <!-- Components with graphics to one side and text to the other -->
-      <article>
-        <!-- Add image-->
-        <section class="team_graphics"></section>
-        <section class="team_text">
-          <h3>Cras</h3>
-          <ul>
-            <li>- Oti usus symbola temporibus</li>
-            <li>- Clectione 24/7</li>
-            <li>- Risus terrestres</li>
-            <li>- Neque quae peccat</li>
-          </ul>
-          <a href="#contact">Contact Cras &#x2794;</a>
-        </section>
-      </article>
-      <article>
-        <!-- Change order here so text comes first then graphics -->
-        <!-- Add image-->
-        <section class="team_graphics"></section>
-        <section class="team_text">
-          <h3>Ipsum Sapien</h3>
-          <ul>
-            <li>- Dp primis te quod pede</li>
-            <li>- Eos eius regulantur wisi eum</li>
-            <li>- Eget clari criminales</li>
-            <li>- Odio timorem nascetur</li>
-          </ul>
-          <a href="#contact">Contact Ipsum Sapien &#x2794;</a>
-        </section>
-      </article>
+      <div class="row gap-2 justify-content-md-center">
+        <article class="col-5 pt-5 pb-1 h-100">
+          <!-- Add image-->
+          <section class="team_graphics">
+            <img src="image3.jpg" alt="" class="img-thumbnail" />
+          </section>
+          <section class="team_text">
+            <h3>Cras</h3>
+            <ul>
+              <li>- Oti usus symbola temporibus</li>
+              <li>- Clectione 24/7</li>
+              <li>- Risus terrestres</li>
+              <li>- Neque quae peccat</li>
+            </ul>
+            <a href="#contact">Contact Cras &#x2794;</a>
+          </section>
+        </article>
+        <article class="col-5 pt-5 pb-1 h-100">
+          <!-- Change order here so text comes first then graphics -->
+          <!-- Add image-->
+          <section class="team_graphics">
+            <img src="image3.jpg" alt="" class="img-thumbnail" />
+          </section>
+          <section class="team_text">
+            <h3>Ipsum Sapien</h3>
+            <ul>
+              <li>- Dp primis te quod pede</li>
+              <li>- Eos eius regulantur wisi eum</li>
+              <li>- Eget clari criminales</li>
+              <li>- Odio timorem nascetur</li>
+            </ul>
+            <a href="#contact">Contact Ipsum Sapien &#x2794;</a>
+          </section>
+        </article>
+      </div>
     </section>
-    <section id="contact">
-      <h2>Iudicia quod fames?</h2>
-      <p>
+    <section id="contact" class="container">
+      <h2 class="text-dark">Iudicia quod fames?</h2>
+      <p class="text-dark">
         Vel w tibi progressionem exequi tincidunt ullo Modo'd orator
         depauperatio sapiente convallis.
       </p>
@@ -234,50 +281,65 @@
       <form id="contact_form">
         <!-- Two column layout, name and email a column each, message two columns. Labels should be over input-->
         <div class="form_group">
-          <label for="name">Full name</label>
-          <input type="text" id="name" name="Name" required />
+          <label for="name" class="text-dark">Full name</label>
+          <input type="text" id="name" name="Name" class="bg-light" required />
         </div>
 
         <div class="form_group">
-          <label for="email">Email address</label>
-          <input type="email" id="email" name="Email" required />
+          <label for="email" class="text-dark">Email address</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            class="bg-light"
+            required
+          />
         </div>
 
         <div class="form_group">
-          <label for="message">Message</label>
-          <textarea id="message" name="Message" required></textarea>
+          <label for="message" class="text-dark">Message</label>
+          <textarea
+            id="message"
+            name="Message"
+            class="bg-light"
+            required
+          ></textarea>
         </div>
 
         <div class="form_group">
-          <button type="submit">Send Message</button>
+          <button type="submit" class="btn btn-warning btn-sm">
+            Send Message
+          </button>
         </div>
       </form>
     </section>
-    <footer>
+    <footer class="navbar p-5 m-0 bg-dark">
       <!-- Footer component -->
-      <div>
-        <h2>Logo</h2>
+      <div class="navbar-brand">
+        <h2 class="text-light">Logo</h2>
         <ul>
           <li><a>contact@logo.com</a></li>
           <li><a>+45 23225343</a></li>
         </ul>
       </div>
-      <section>
-        <div>
-          <h3>Eos Purus</h3>
-          <ul>
-            <li><a href="">Stricte Natione</a></li>
-            <li><a href="">Pygmaeus Quasi</a></li>
-            <li><a href="">Patiens Quos Neglexi</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Company</h3>
-          <ul>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
+      <section class="navbar-nav">
+        <div class="d-flex column">
+          <div class="ps-2">
+            <h3 class="text-light">Eos Purus</h3>
+            <ul>
+              <li><a href="">Stricte Natione</a></li>
+              <li><a href="">Pygmaeus Quasi</a></li>
+              <li><a href="">Patiens Quos Neglexi</a></li>
+            </ul>
+          </div>
+          <div class="ps-2">
+            <h3 class="text-light">Company</h3>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
       </section>
     </footer>
